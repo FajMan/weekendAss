@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="con">
+        <h2>Dynamic Input Fields</h2>
+        <form id="dynamicForm">
+            <label for="fieldCount">Number of Input Fields:</label>
+            <input type="number" id="fieldCount" min="1" value="1">
+            <br><br>
+            <button type="button" onclick="addNewInput()">Add Input Fields</button>
+            <br>
+            <div id="inputContainer"></div>
+            <br>
+            <button type="button" onclick="addNewRow()">Add to Table</button>
+        </form>
+
+        <h2>Data Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Input Data</th>
+                </tr>
+            </thead>
+            <tbody id="dataTableBody">
+            </tbody>
+        </table>
+
+        <h2>Random Quote</h2>
+        <button type="button" onclick="myQuote()">Get Random Quote</button>
+        <div id="quoteContainer" style="margin-top: 20px; font-style: italic; background-color: rgba(180, 84, 84, 0.774);"></div>
+    </div>
+
+<script src="script.js"></script> 
+</body>
+</html>
